@@ -39,7 +39,7 @@ function loadData() {
     //         '</li>');
     //     };
 
-    })
+    // })
 
     return false;
 };
