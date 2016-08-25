@@ -24,7 +24,7 @@ function loadData() {
 
     // NY Times AJAX request
 
-    var nytimesURL = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?q=' + cityStr + '&sort=newest&api-key=9ea1aa776bff425da7a60de26822c242'
+    var nytimesURL = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=' + cityStr + '&sort=newest&api-key=9ea1aa776bff425da7a60de26822c242'
     $.getJSON(nytimesURL, function(data){
 
         $nytHeaderElem.text('New York Times Articles About ' + cityStr);
