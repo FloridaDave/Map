@@ -26,7 +26,7 @@ function loadData() {
 
     $getJSON(URL, function (data){
         console.log(data);
-    }
+    });
 
     return false;
 };
