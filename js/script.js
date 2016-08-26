@@ -49,7 +49,7 @@ function loadData() {
 
     debugger;
 
-    var WikiUrl = 'http://en.wikipedia.org/w/api.php?action=opensearch&search='
+    var wikiUrl = 'http://en.wikipedia.org/w/api.php?action=opensearch&search='
     + cityStr + ' &format=json&callback=wikiCallback';
 
     $.ajax({
