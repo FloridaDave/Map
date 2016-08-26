@@ -54,17 +54,17 @@ function loadData() {
         url: wikiUrl,
         dataType: "jsonp",
         // jsonp: "callback"
-        success: function ( response ) {
+        success: function( response ) {
             var articleList = response[1];
 
             for (var i = 0; i < articleList.length; i++) {
-                articalStr = articleList[1];
+                articleStr = articleList[1];
                 var url = 'http://en.wikipedia.org/wiki/' + articleStr;
                 $wikiElem.append('<li><a href="' + url + '">' +
                     articleStr + '</a></li>');
             };
         }
-    })
+    });
 
 
     return false;
