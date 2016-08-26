@@ -47,6 +47,8 @@ function loadData() {
 
     // Wikipedia AJAX request
 
+    debugger;
+
     var WikiUrl = 'http://en.wikipedia.org/w/api.php?action=opensearch&search='
     + cityStr + ' &format=json&callback=wikiCallback';
 
@@ -65,8 +67,6 @@ function loadData() {
             };
         }
     });
-
-debugger;
 
     return false;
 };
