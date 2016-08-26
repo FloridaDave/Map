@@ -19,7 +19,7 @@ function loadData() {
 
     $greeting.text( 'So, you want to live at ' + address +'?');
 
-    var streetviewURL = 'http://maps.googleapis.com/maps/api/streetview?size=600x400&location=' + address +'';
+    var streetviewURL = 'https://maps.googleapis.com/maps/api/streetview?size=600x400&location=' + address +'';
     $body.append('<img class="bgimg" src="' + streetviewURL +'">');
 
     // NY Times AJAX request
@@ -40,10 +40,6 @@ function loadData() {
         };
 
     })
-    
-    // .error(function(e)){
-    //     $nytHeaderElem.text('New York Times Article Could Not Be Loaded');
-    // });
 
     return false;
 };
