@@ -39,9 +39,9 @@ function loadData() {
             '</li>');
         };
 
-    }).error(function(e)){
-        $nytHeaderElem.text('New York Times Article Could Not Be Loaded');
-    });
+    // }).error(function(e)){
+    //     $nytHeaderElem.text('New York Times Article Could Not Be Loaded');
+    // });
 
     return false;
 };
