@@ -63,7 +63,7 @@ function loadData() {
                 $wikiElem.append('<li><a href="' + url + '">' +
                     articleStr + '</a></li>');
             };
-        };
+        }
     });
 
 
